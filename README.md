@@ -1,11 +1,11 @@
 # Retail Sales Analysis (SQL Project)
 ## Project Overview
 
--> This project focuses on analyzing retail sales data using SQL.
+ - **This project focuses on analyzing retail sales data using SQL.**
 
--> The dataset contains transaction-level information including customer demographics, product categories, sales amount, quantity, and time of purchase.
+ - **The dataset contains transaction-level information including customer demographics, product categories, sales amount, quantity, and time of purchase.**
 
--> The goal is to perform data cleaning, exploratory data analysis (EDA), and business insights generation through SQL queries.
+ - **The goal is to perform data cleaning, exploratory data analysis (EDA), and business insights generation through SQL queries.**
 
 ## Dataset Description
 
@@ -27,100 +27,100 @@ The dataset (retail_sales) has the following columns:
 
 ## Data Cleaning
 
--> Removed rows with null values in critical numeric fields (quantity, price_per_unit, cogs, total_sale).
+ - **Removed rows with null values in critical numeric fields (quantity, price_per_unit, cogs, total_sale).**
 
--> Imputed missing values in the age column using the median age per gender & category.
+ - **Imputed missing values in the age column using the median age per gender & category.**
 
--> Ensured data consistency across categories and transactions.
+ - **Ensured data consistency across categories and transactions.**
 
 ## Key Business Questions Solved
 
--> The project answers 16 analytical questions using SQL:
+ **The project answers 16 analytical questions using SQL:**
 
--> Sales made on a specific date (2022-11-05).
+ - **Sales made on a specific date (2022-11-05).**
 
--> Clothing sales with quantity > 3 in November 2022.
+ - **Clothing sales with quantity > 3 in November 2022.**
 
--> Total sales & orders for each category.
+ - **Total sales & orders for each category.**
 
--> Average age of customers in the Beauty category.
+ - **Average age of customers in the Beauty category.**
 
--> Transactions with sales > 1000.
+ - **Transactions with sales > 1000.**
 
--> Transaction count by gender & category.
+ - **Transaction count by gender & category.**
 
--> Best-selling month each year (using window functions).
+ - **Best-selling month each year (using window functions).**
 
--> Top 5 customers by total sales.
+ - **Top 5 customers by total sales.**
 
--> Customers who purchased from all categories.
+ - **Customers who purchased from all categories.**
 
--> Number of orders by shift (Morning, Afternoon, Evening).
+ - **Number of orders by shift (Morning, Afternoon, Evening).**
 
--> Repeat vs One-time customers.
+ - **Repeat vs One-time customers.**
 
--> Top 10 customers by Customer Lifetime Value (CLV).
+ - **Top 10 customers by Customer Lifetime Value (CLV).**
 
--> Category contribution % to overall sales.
+ - **Category contribution % to overall sales.**
 
--> Highest-selling day of the week.
+ - **Highest-selling day of the week.**
 
--> Peak sales hour of the day.
+ - **Peak sales hour of the day.**
 
--> Gross profit by category.
+ - **Gross profit by category.**
 
 ## Insights Gained
 
--> Electronics category contributes the highest % to overall sales.
+ - **Electronics category contributes the highest % to overall sales.**
 
--> Clothing generates the highest gross profit despite lower contribution %.
+ - **Clothing generates the highest gross profit despite lower contribution %.**
 
--> Sunday is the highest-selling day of the week.
+ - **Sunday is the highest-selling day of the week.**
 
--> Sales peak between 7 PM and 8 PM.
+ - **Sales peak between 7 PM and 8 PM.**
 
--> All customers in this dataset are repeat customers (no one-time buyers).
+ - **All customers in this dataset are repeat customers (no one-time buyers).**
 
--> Top customers (IDs: 3, 1, 5, 2, 4) drive a large portion of total sales.
+ - **Top customers (IDs: 3, 1, 5, 2, 4) drive a large portion of total sales.**
 
 ## Tech Stack
 
--> SQL (PostgreSQL)
+ - **SQL (PostgreSQL)**
 
--> Window Functions (RANK)
+ - **Window Functions (RANK)**
 
--> Aggregations & Grouping
+ - **Aggregations & Grouping**
 
--> CTEs (WITH clauses)
+ - **CTEs (WITH clauses)**
 
--> Data Cleaning with UPDATE, DELETE
+ - **Data Cleaning with UPDATE, DELETE**
 
 ## Future Improvements
 
--> Add visualization layer using Tableau/Power BI for interactive dashboards.
+ - **Add visualization layer using Tableau/Power BI for interactive dashboards.**
 
--> Perform RFM (Recency, Frequency, Monetary) analysis for customer segmentation.
+ - **Perform RFM (Recency, Frequency, Monetary) analysis for customer segmentation.**
 
--> Extend queries to support trend forecasting with time-series data.
+ - **Extend queries to support trend forecasting with time-series data.**
 
--> Optimize performance with indexes on sale_date, category, and customer_id.
+ - **Optimize performance with indexes on sale_date, category, and customer_id.**
 
 ## Files in Repository
 
--> p1_Retail_Sales_Analysis.sql → Full SQL script with cleaning, queries, and insights.
+ - **p1_Retail_Sales_Analysis.sql → Full SQL script with cleaning, queries, and insights.**
 
--> retail_sales.csv  → Raw dataset.
+ - **retail_sales.csv  → Raw dataset.**
 
--> README.md → Project documentation.
+ - **README.md → Project documentation.**
 
 ## How to Run
 
--> Create the retail_sales table in PostgreSQL (DDL included in .sql file).
+ - **Create the retail_sales table in PostgreSQL (DDL included in .sql file).**
 
--> Import dataset (COPY or INSERT).
+ - **Import dataset (COPY or INSERT).**
 
--> Run queries from p1_Retail_Sales_Analysis.sql in sequence.
-
--> Review both query outputs and insights.
+ - **Run queries from p1_Retail_Sales_Analysis.sql in sequence.**
+ 
+ - **Review both query outputs and insights.**
 
 ### This project demonstrates how SQL alone can generate powerful business insights from retail sales data.
